@@ -1,0 +1,46 @@
+.features {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:baseline;
+  margin: 5rem 0rem;
+}
+.features__super {
+  padding: 0rem;
+  margin: 0rem;
+}
+.features__grid {
+  display:grid;
+  grid-template-columns: auto auto;
+  max-width:40rem;
+}
+.features__card {
+  flex-basis: 50%;
+  padding:1rem;
+  max-width:20rem;
+}
+.features__imageWrapper {
+  background-color: $color-primary--light;
+  display:inline-block;
+  padding:0.5rem;
+  border-radius:1rem;
+
+}
+.features__image {
+
+}
+.features__title {
+
+}
+.features__description {
+
+}
+
+@media screen and (max-width: $tablet-wbreakpoint) {
+  .features {
+   flex-direction: column;
+  }
+  .features__grid {
+    margin: 3rem 0rem;
+  }
+}

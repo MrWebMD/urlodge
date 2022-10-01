@@ -1,0 +1,16 @@
+$color-primary: #52BF90;
+$color-primary--light: #52bf903c;
+$mobile-wbreakpoint: 600px;
+$tablet-wbreakpoint: 900px;
+$pageWidth: 1200px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+@import "Globals";
+@import "Navigation";
+@import "Inputs";
+@import "Super";
+@import "Features";
+@import "Mobile";
+
+body {
+  height: 3000px;
+}

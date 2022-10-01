@@ -1,0 +1,63 @@
+.super {
+  width:100%;
+  padding:10rem 0rem;
+  position: relative;  
+  overflow:hidden;
+}
+.super__content {
+  max-width: 29rem;
+}
+.super__bgImage {
+  background: url("/assets/forest 1.jpg");
+  background-position:center;
+  background-size:cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -2;
+}
+.super__bgBlur {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  filter: blur(3px);
+  background-size:cover;
+  transform: scale(1.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+
+}
+.super__title {
+  margin:0;
+}
+h1.super__title {
+  font-size:3rem;
+}
+h2.super__title {
+  font-size: 2rem;
+}
+.super__description {
+  font-weight: 500;
+  line-height: 25px;
+  margin: 2rem 0rem;
+  
+}
+
+.super__buttonRow {
+  
+}
+
+.super__statsRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 0rem;
+}
+.super__stat {
+}

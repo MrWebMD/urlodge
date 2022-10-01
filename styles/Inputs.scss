@@ -1,0 +1,36 @@
+.button {
+  font-size: 20px;
+  color: white;
+  padding:1rem 3rem;
+  background-color: transparent;
+  border-radius:0.5rem;
+  border: 0px;
+}
+.button--filled {
+  background-color: $color-primary;
+}
+.button--outlined {
+  border: 1px solid $color-primary;
+}
+
+/** 
+When two buttons are side by side, space out every other 
+button except the first one. Then on mobile, remove the spacing and
+stack them one on top of the other
+**/
+.buttonRow > .button:not(:first-child) {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: $mobile-wbreakpoint) {
+  .buttonRow > .button:not(:first-child) {
+    margin-left: 0rem;
+  }
+  .button {
+    margin: 0.5rem 0rem;
+  }
+  .buttonRow {
+    display:flex;
+    flex-direction: column;
+  }
+}
